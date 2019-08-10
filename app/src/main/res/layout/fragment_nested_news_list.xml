@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nestedNews.NestedNewsListFragment">
+    <Button
+        android:id="@+id/test_toast_button"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/test_dialog_button"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:tag="show"
+        android:visibility="visible"
+        android:layout_marginTop="1dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/nested_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</FrameLayout>
